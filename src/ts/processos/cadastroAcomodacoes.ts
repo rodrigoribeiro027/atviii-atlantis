@@ -18,20 +18,22 @@ export default class CadastroAcomodacoes extends Processo {
         let diretor = new DiretorSolteiroSimples()
         this.acomodacoes.push(diretor.construir())
         
-        let diretor2 = new DiretorCasalSimples()
+        let diretor2 = new DiretorSolteiroMais()
         this.acomodacoes.push(diretor2.construir())
-        
-        let diretor3 = new DiretorFamilaSimples()
-        this.acomodacoes.push(diretor3.construir())
 
-        let diretor4 = new DiretorFamiliaSuper()
+        let diretor3 = new DiretorCasalSimples()
+        this.acomodacoes.push(diretor3.construir())
+        
+        let diretor4 = new DiretorFamilaSimples()
         this.acomodacoes.push(diretor4.construir())
 
-        let diretor5 = new DiretorFamíliaMais()
+        let diretor5 = new DiretorFamiliaSuper()
         this.acomodacoes.push(diretor5.construir())
 
-        let diretor6 = new DiretorSolteiroMais()
+        let diretor6 = new DiretorFamíliaMais()
         this.acomodacoes.push(diretor6.construir())
+
+        
         
     }
 }
